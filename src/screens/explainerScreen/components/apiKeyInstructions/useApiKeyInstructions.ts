@@ -22,29 +22,13 @@ export const useApiKeyInstructions = ({
         ? analyticsTags.onboarding.addPaymentLink
         : analyticsTags.apiKeyInstructions.addPaymentLink,
     );
-    Linking.openURL(appLabels.explainer.apiKeyInstructions.addPaymentLink);
-  };
-
-  const onUsageLimitLinkPress = () => {
-    trackAction(
-      isPaymentOnly
-        ? analyticsTags.onboarding.usageLimitLink
-        : analyticsTags.apiKeyInstructions.usageLimitLink,
-    );
-    Linking.openURL(appLabels.explainer.apiKeyInstructions.usageLimitLink);
-  };
-
-  const onCheckUsageLinkPress = () => {
-    trackAction(analyticsTags.apiKeyInstructions.checkUsageLink);
-    Linking.openURL(appLabels.explainer.apiKeyInstructions.checkUsageLink);
+    Linking.openURL(appLabels.explainer.apiKeyInstructions.paymentOverviewLink);
   };
 
   return {
     theme,
     styles,
-    onCheckUsageLinkPress,
     onGenerateKeyLinkPress,
     onAddPaymentLinkPress,
-    onUsageLimitLinkPress,
   };
 };

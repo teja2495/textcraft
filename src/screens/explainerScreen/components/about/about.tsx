@@ -22,13 +22,13 @@ export const About = () => {
       <Text style={styles.text}>{appLabels.explainer.about.intro}</Text>
       <Text style={styles.text}>
         <Text style={[styles.text, {fontFamily: theme.fonts.SansBold}]}>
-          {appLabels.explainer.about.summarizePrefix}
+          {appLabels.explainer.about.readingPrefix}
         </Text>
-        {appLabels.explainer.about.summarizeDescription}
+        {appLabels.explainer.about.readingDescription}
       </Text>
       <Text style={styles.text}>
         <Text style={[styles.text, {fontFamily: theme.fonts.SansBold}]}>
-          {appLabels.explainer.about.rewritePrefix}
+          {appLabels.explainer.about.writingPrefix}
         </Text>
         {appLabels.explainer.about.rewriteDescription}
       </Text>

@@ -20,12 +20,11 @@ export const appLabels = {
   },
   explainer: {
     about: {
-      intro:
-        'TextCraft simplifies the way you read and write by utilizing Al technology. The app currently offers two main features - Summarize and Rewrite.',
-      summarizePrefix: '\nSummarize: ',
-      summarizeDescription:
-        'This feature is useful to summarize lengthy texts or article links. TextCraft can generate a concise and easy-to-understand summary. Long-pressing on summarize will show more options. Also, by enabling the "Auto-Summarize Links" option in settings, you can summarize shared article links instantly.',
-      rewritePrefix: '\nRewrite: ',
+      intro: 'TextCraft simplifies the way you read and write using AI.',
+      readingPrefix: '\nReading: ',
+      readingDescription:
+        'You can summarize lengthy texts or article links. TextCraft can generate a concise and easy-to-understand summary. Long-pressing on summarize will give you more options like "Explain" which helps you better understand anything.',
+      writingPrefix: '\nWriting: ',
       rewriteDescription:
         'TextCraft can also help with writing English content for work or social media. Just give any rough text as input and it will give you a well-written output while preserving the meaning, tone, and essence of the original text. By long-pressing on Rewrite you can access additional options like setting the tone, fixing grammar, expanding and shortening any text.',
       dataCollection:
@@ -40,17 +39,12 @@ export const appLabels = {
     },
     apiKeyInstructions: {
       step: '\nStep 2: ',
-      text: 'Add your payment details in the link below to activate your key. You will get charged based on your usage. If you are living outside the US, use a card that supports international transactions.\n',
+      text: "Add credit to your account using the link below to activate your key. If your credit balance is $0, your key won't work. If you are living outside the US, use a card that supports international transactions.\n",
       pricing: '\nPricing: ',
       pricingBody:
-        "It's pretty cheap. It roughly costs around $0.004 (~ ₹0.30) for every 50 requests (Summarize/Rewrite). The cost per month for even the most heavy users will not exceed $0.12 (₹10), while casual users can expect an even lower cost. You can also set usage limits for your key using the link below.\n\n",
-      addPaymentLink:
-        'https://platform.openai.com/account/billing/payment-methods',
-      additionalLinks: '\nAdditional Links:',
-      checkUsage: '\n\nCheck your API Key usage & cost',
-      checkUsageLink: 'https://platform.openai.com/account/usage',
-      usageLimit: '\n\nSet usage limits\n\n',
-      usageLimitLink: 'https://platform.openai.com/account/billing/limits',
+        "It's pretty cheap. It roughly costs around $0.002 (~ ₹0.15) for every 50 actions. The cost per month for even the most heavy users will not exceed $0.6 (₹5), while casual users can expect an even lower costs.\n\n",
+      paymentOverviewLink:
+        'https://platform.openai.com/settings/organization/billing/overview',
     },
     button: {
       done: 'Done',
@@ -88,7 +82,6 @@ export const fetchResultScreenTitle: Record<InputActionType, string> = {
   SUMMARIZE: 'Summary',
   REWRITE: 'Rewritten Text',
   REWRITE_PROFESSIONAL: 'Rewritten Text',
-  REWRITE_CASUAL: 'Rewritten Text',
   FIX_GRAMMAR: 'Rewritten Text',
   SHORTEN: 'Rewritten Text',
   EXPAND: 'Expanded Text',
@@ -153,10 +146,6 @@ export const moreActions = {
     {
       id: InputActionType.Shorten,
       title: 'Make it Shorter',
-    },
-    {
-      id: InputActionType.RewriteCasual,
-      title: 'Casual Tone',
     },
     {
       id: InputActionType.RewriteProfessional,

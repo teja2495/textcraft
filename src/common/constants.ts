@@ -4,7 +4,6 @@ export enum InputActionType {
   ExplainLikeTen = 'EXPLAIN_LIKE_TEN',
   FixGrammar = 'FIX_GRAMMAR',
   Rewrite = 'REWRITE',
-  RewriteCasual = 'REWRITE_CASUAL',
   RewriteProfessional = 'REWRITE_PROFESSIONAL',
   Shorten = 'SHORTEN',
   Summarize = 'SUMMARIZE',
@@ -36,7 +35,6 @@ export const fetchPrompt: Record<InputActionType, string> = {
   EXPLAIN:
     'Please provide a detailed explanation of the text provided, including any relevant background information or context that may help clarify the meaning. Also ensure your response is specific, concise, and avoids the use of any complex terminology or jargon. - ',
   FIX_GRAMMAR: 'Fix Grammar - ',
-  REWRITE_CASUAL: 'Rewrite in casual tone - ',
   REWRITE_PROFESSIONAL: 'Rewrite in professional tone - ',
   REWRITE: 'Rewrite - ',
   SHORTEN:

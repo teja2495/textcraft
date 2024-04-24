@@ -45,7 +45,6 @@ export const analyticsTags = {
     apiKeyLink: 'onboarding_ask_key_screen_link',
     apiKeyNext: 'onboarding_ask_key_screen_next_btn',
     addPaymentLink: 'onboarding_add_payment_screen_link',
-    usageLimitLink: 'onboarding_add_payment_screen_usage_link',
     done: 'onboarding_add_payment_screen_done_btn',
     apiKeyTestSuccess: 'onboarding_key_test_success',
     apiKeyTestFailure: 'onboarding_key_test_failure',
@@ -106,7 +105,6 @@ export const analyticsTags = {
   apiKeyInstructions: {
     generateKeyLink: 'key_instructions_screen_create_key_link',
     addPaymentLink: 'key_instructions_screen_payment_link',
-    usageLimitLink: 'key_instructions_screen_usage_limit_link',
     checkUsageLink: 'key_instructions_screen_check_usage_link',
   },
   headerActions: {
@@ -131,7 +129,6 @@ export const fetchInputActionTag: Record<InputActionType, string> = {
   EXPLAIN_LIKE_TEN: 'homescreen_action_explain_like_ten_btn',
   EXPLAIN: 'homescreen_action_explain_btn',
   FIX_GRAMMAR: 'homescreen_action_fix_grammar_btn',
-  REWRITE_CASUAL: 'homescreen_action_casual_tone_btn',
   REWRITE_PROFESSIONAL: 'homescreen_action_professional_tone_btn',
   REWRITE: 'homescreen_action_rewrite_btn',
   SHORTEN: 'homescreen_action_shorten_btn',
