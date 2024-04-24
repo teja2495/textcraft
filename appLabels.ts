@@ -81,6 +81,7 @@ export const appLabels = {
 export const fetchResultScreenTitle: Record<InputActionType, string> = {
   SUMMARIZE: 'Summary',
   REWRITE: 'Rewritten Text',
+  EMAIL: 'Email',
   REWRITE_PROFESSIONAL: 'Rewritten Text',
   FIX_GRAMMAR: 'Rewritten Text',
   SHORTEN: 'Rewritten Text',
@@ -150,6 +151,10 @@ export const moreActions = {
     {
       id: InputActionType.RewriteProfessional,
       title: 'Professional Tone',
+    },
+    {
+      id: InputActionType.Email,
+      title: 'Formal Email',
     },
     {
       id: InputActionType.FixGrammar,

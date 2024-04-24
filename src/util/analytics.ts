@@ -128,6 +128,7 @@ export const fetchInputActionTag: Record<InputActionType, string> = {
   EXPAND: 'homescreen_action_expand_btn',
   EXPLAIN_LIKE_TEN: 'homescreen_action_explain_like_ten_btn',
   EXPLAIN: 'homescreen_action_explain_btn',
+  EMAIL: 'homescreen_action_email_btn',
   FIX_GRAMMAR: 'homescreen_action_fix_grammar_btn',
   REWRITE_PROFESSIONAL: 'homescreen_action_professional_tone_btn',
   REWRITE: 'homescreen_action_rewrite_btn',
