@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import {appLabels} from '../../../appLabels';
 import {AppAlert, AppAlertType} from '../../common/appAlert';
-import {useAskApiKeyScreen} from './useAskApiKeyScreen';
+import {useAskApiKeyScreen} from './useAskAPIKeyScreen';
 
 const AskApiKeyScreen = () => {
   const {

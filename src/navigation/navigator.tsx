@@ -8,9 +8,9 @@ import {useNavigator} from './useNavigator';
 import SettingsScreen from '../screens/settingsScreen/settingsScreen';
 import SettingsButton from '../common/settingsButton';
 import {ExplainerScreenType} from '../common/constants';
-import HomeScreen from '../screens/homeScreen/homeScreen';
-import AskApiKeyScreen from '../screens/askApiKeyScreen/askApiKeyScreen';
 import SplashScreen from '../screens/splashScreen/splashScreen';
+import HomeScreen from '../screens/homeScreen/homescreen';
+import AskApiKeyScreen from '../screens/askAPIKeyScreen/askAPIKeyScreen';
 
 export default function AppNavigator() {
   const {commonScreenOptions} = useNavigator();

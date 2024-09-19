@@ -10,9 +10,9 @@ import {saveOpenAIApiKey} from '../../util/handleApiKey';
 import Clipboard from '@react-native-community/clipboard';
 import {analyticsTags, trackAction, trackState} from '../../util/analytics';
 import {useAppTheme} from '../../common/useAppTheme';
-import {getStyles} from './askApiKeyScreen.styles';
 import {AppState, Linking} from 'react-native';
 import {logError} from '../../util/helpers';
+import {getStyles} from './askAPIKeyScreen.styles';
 
 export const useAskApiKeyScreen = () => {
   const {askAPIKey, toast} = appLabels;
