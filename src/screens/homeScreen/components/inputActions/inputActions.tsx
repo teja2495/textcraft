@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {Text, TouchableOpacity, View} from 'react-native';
 import {appLabels} from '../../../../../appLabels';
 import {InputActionType} from '../../../../common/constants';
+import {SettingsContext} from '../../../../common/settingsContext';
 import {MoreInputActions} from '../moreInputActions/moreInputActions';
 import {useInputActions} from './useInputActions';
 
@@ -19,11 +20,17 @@ export const InputActions = ({input}: InputActionsProps) => {
     styles,
   } = useInputActions({input});
 
+  const {appSettings} = useContext(SettingsContext);
+  const isDarkMode = appSettings.isDarkMode;
+
   return (
     <View style={styles.container}>
       <View style={styles.buttonsContainer}>
         <TouchableOpacity
-          style={[styles.actionButtonContainer, styles.summaryButtonColor]}
+          style={[
+            styles.actionButtonContainer,
+            isDarkMode ? styles.grey : styles.summaryButtonColor,
+          ]}
           onPress={() => onActionButtonPress(InputActionType.Summarize)}
           onLongPress={() =>
             onActionButtonLongPress(InputActionType.Summarize)
@@ -34,7 +41,10 @@ export const InputActions = ({input}: InputActionsProps) => {
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={[styles.actionButtonContainer, styles.rewriteButtonColor]}
+          style={[
+            styles.actionButtonContainer,
+            isDarkMode ? styles.grey : styles.rewriteButtonColor,
+          ]}
           onPress={() => onActionButtonPress(InputActionType.Rewrite)}
           onLongPress={() => onActionButtonLongPress(InputActionType.Rewrite)}>
           <Text

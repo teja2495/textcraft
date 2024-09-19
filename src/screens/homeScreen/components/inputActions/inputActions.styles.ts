@@ -27,13 +27,16 @@ export const getStyles = ({colors, fonts}: ThemeProps) =>
     summaryButtonColor: {
       backgroundColor: colors.green,
     },
+    grey: {
+      backgroundColor: colors.textBackground,
+    },
     rewriteButtonColor: {
       backgroundColor: colors.yellow,
     },
     summaryButtonTextColor: {
-      color: colors.greenText,
+      color: colors.green,
     },
     rewriteButtonTextColor: {
-      color: colors.yellowText,
+      color: colors.yellow,
     },
   });
