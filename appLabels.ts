@@ -211,9 +211,9 @@ export const settings = {
       id: AppSetting.About,
       title: 'About TextCraft',
     },
-    {
-      id: AppSetting.Feedback,
-      title: 'Feedback',
-    },
+    // {
+    //   id: AppSetting.Feedback,
+    //   title: 'Feedback',
+    // },
   ],
 };
