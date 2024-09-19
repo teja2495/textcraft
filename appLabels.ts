@@ -16,7 +16,7 @@ export const appLabels = {
     step: 'Step 1: ',
     instructions:
       'Click on the link below and login to your OpenAI™ account. Then create and copy the new secret key.\n',
-    generateKeyLink: 'https://platform.openai.com/account/api-keys',
+    generateKeyLink: 'https://platform.openai.com/api-keys',
   },
   explainer: {
     about: {
