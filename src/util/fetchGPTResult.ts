@@ -1,3 +1,4 @@
+import OpenAI from 'openai';
 import {fetchPrompt, InputActionType} from '../common/constants';
 import {getOpenAIApiKey} from './handleApiKey';
 import {logError} from './helpers';
@@ -9,26 +10,23 @@ interface Props {
 }
 
 export const fetchGPTResult = async ({input, actionType, key}: Props) => {
-  const {Configuration, OpenAIApi} = require('openai');
-
   const apiKey = key ?? (await getOpenAIApiKey());
 
-  const configuration = new Configuration({
-    apiKey,
+  const client = new OpenAI({
+    apiKey: apiKey ?? '',
   });
-  const openAI = new OpenAIApi(configuration);
   const promptPrefix = fetchPrompt[actionType];
   const inputWithPrompt = `${promptPrefix}${input}`;
   console.log('API Input: ', inputWithPrompt);
 
   try {
-    const response = await openAI.createChatCompletion({
-      model: 'gpt-3.5-turbo',
+    const response = await client.chat.completions.create({
       messages: [{role: 'user', content: inputWithPrompt}],
+      model: 'gpt-4o-mini',
     });
 
-    console.log('API Response: ', JSON.stringify(response.data));
-    return String(response.data.choices[0].message.content).trim();
+    console.log('API Response: ', JSON.stringify(response));
+    return String(response.choices[0].message.content).trim();
   } catch (error) {
     logError(error);
     if (String(error).includes('401')) {

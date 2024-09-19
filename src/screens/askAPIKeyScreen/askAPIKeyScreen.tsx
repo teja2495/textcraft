@@ -40,7 +40,7 @@ const AskApiKeyScreen = () => {
           placeholder={firstTime ? askAPIKey.title : askAPIKey.resetKeyTitle}
           placeholderTextColor={theme.colors.placeHolderText}
           onChangeText={text => setKey(text)}
-          maxLength={51}
+          maxLength={164}
           autoFocus
           multiline
         />

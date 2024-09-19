@@ -62,7 +62,7 @@ export const useAskApiKeyScreen = () => {
   }, []);
 
   const onButtonPress = async () => {
-    if (key.trim().length !== 51 || !key.trim().startsWith('sk-')) {
+    if (key.trim().length !== 164 || !key.trim().startsWith('sk-proj-')) {
       trackAction(analyticsTags.errorToast.invalidKey);
       showToast({message: toast.errors.invalidApiKey, type: 'error'});
     } else {
