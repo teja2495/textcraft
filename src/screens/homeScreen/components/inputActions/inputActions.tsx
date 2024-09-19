@@ -36,7 +36,10 @@ export const InputActions = ({input}: InputActionsProps) => {
             onActionButtonLongPress(InputActionType.Summarize)
           }>
           <Text
-            style={[styles.actionButtonText, styles.summaryButtonTextColor]}>
+            style={[
+              styles.actionButtonText,
+              isDarkMode ? styles.yellow : styles.summaryButtonTextColor,
+            ]}>
             {appLabels.inputActions.summarize}
           </Text>
         </TouchableOpacity>
@@ -48,7 +51,10 @@ export const InputActions = ({input}: InputActionsProps) => {
           onPress={() => onActionButtonPress(InputActionType.Rewrite)}
           onLongPress={() => onActionButtonLongPress(InputActionType.Rewrite)}>
           <Text
-            style={[styles.actionButtonText, styles.rewriteButtonTextColor]}>
+            style={[
+              styles.actionButtonText,
+              isDarkMode ? styles.green : styles.rewriteButtonTextColor,
+            ]}>
             {appLabels.inputActions.rewrite}
           </Text>
         </TouchableOpacity>

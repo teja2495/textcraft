@@ -34,9 +34,15 @@ export const getStyles = ({colors, fonts}: ThemeProps) =>
       backgroundColor: colors.yellow,
     },
     summaryButtonTextColor: {
-      color: colors.green,
+      color: colors.greenText,
     },
     rewriteButtonTextColor: {
+      color: colors.yellowText,
+    },
+    yellow: {
+      color: colors.green,
+    },
+    green: {
       color: colors.yellow,
     },
   });
