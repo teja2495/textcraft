@@ -38,7 +38,7 @@ export const fetchPrompt: Record<InputActionType, string> = {
     'Please provide a detailed explanation of the text provided, including any relevant background information or context that may help clarify the meaning. Also ensure your response is specific, concise, and avoids the use of any complex terminology or jargon. - ',
   FIX_GRAMMAR: 'Fix Grammar - ',
   REWRITE_PROFESSIONAL: 'Rewrite in professional tone - ',
-  REWRITE: 'Rewrite - ',
+  REWRITE: 'Rewrite in common language: ',
   SHORTEN:
     'Make this text shorter but it should preserve all the meaning and tone - ',
   SUMMARIZE_IN_POINTS:
@@ -49,6 +49,7 @@ export const fetchPrompt: Record<InputActionType, string> = {
 
 export enum AppSetting {
   // Toggle Settings
+  QuickRewrite = 'QUICK_REWRITE',
   QuickSummarize = 'QUICK_SUMMARIZE',
   ShowTweetEmail = 'SHOW_TWITTER_MAIL',
   IsDarkMode = 'IS_DARK_MODE',

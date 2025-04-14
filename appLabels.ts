@@ -180,6 +180,12 @@ export const moreActions = {
 export const settings = {
   toggleSettings: [
     {
+      id: AppSetting.QuickRewrite,
+      title: 'Auto-Rewrite Text',
+      subtext: 'Quickly Rewrite Shared Text',
+      hasToggle: true,
+    },
+    {
       id: AppSetting.QuickSummarize,
       title: 'Auto-Summarize Links',
       subtext: 'Quickly Summarize Shared Article links',

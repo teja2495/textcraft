@@ -58,11 +58,22 @@ export const useInputCard = ({inputText, setInputText}: InputCardProps) => {
           actionType: InputActionType.Summarize,
           input: sharedText,
         });
+      } else if (appSettings.quickRewrite && !isLink(sharedText)) {
+        navigation.navigate(Screen.Result, {
+          actionType: InputActionType.Rewrite,
+          input: sharedText,
+        });
       }
       trackAction(analyticsTags.homescreen.sharedText);
       setInputText(sharedText);
     }
-  }, [appSettings.quickSummarize, navigation, setInputText, sharedText]);
+  }, [
+    appSettings.quickRewrite,
+    appSettings.quickSummarize,
+    navigation,
+    setInputText,
+    sharedText,
+  ]);
 
   useEffect(() => {
     if (clipboardText.length > 0 && inputText.length === 0) {

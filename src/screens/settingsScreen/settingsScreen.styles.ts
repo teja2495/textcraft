@@ -26,6 +26,6 @@ export const getStyles = ({colors, fonts}: ThemeProps) =>
       fontSize: 17,
       alignSelf: 'center',
       color: colors.text,
-      marginTop: '20%',
+      marginTop: '10%',
     },
   });

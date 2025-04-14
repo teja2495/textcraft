@@ -42,6 +42,9 @@ export const isFirstTime = async () => {
 
 export const fetchAllSettings = async () => {
   try {
+    const quickRewriteItem = await AsyncStorage.getItem(
+      AppSetting.QuickRewrite.toString(),
+    );
     const quickSummarizeItem = await AsyncStorage.getItem(
       AppSetting.QuickSummarize.toString(),
     );
@@ -52,6 +55,7 @@ export const fetchAllSettings = async () => {
       AppSetting.IsDarkMode.toString(),
     );
     const result: SettingsContextType = {
+      quickRewrite: quickRewriteItem === 'true' ? true : false,
       quickSummarize: quickSummarizeItem === 'true' ? true : false,
       showTweetEmail: showTweetEmailItem === 'false' ? false : true,
       isDarkMode: isDarkModeItem === 'true' ? true : false,
