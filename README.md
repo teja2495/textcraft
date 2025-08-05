@@ -23,6 +23,12 @@ TextCraft simplifies the way you read and write by utilizing AI technology. The 
   <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="200">
 </a>
 
+## Screenshots
+
+| Home Screen | Summary Result | Rewrite Options |
+|-------------|----------------|-----------------|
+| ![Home Screen](screenshots/homescreen.png) | ![Summary Result](screenshots/result-screen.png) | ![Rewrite Options](screenshots/rewrite-options.png) |
+
 ## Privacy & Security
 
 - **API Key Storage**: Your API key is stored locally in your device's encrypted storage
