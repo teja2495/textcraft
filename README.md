@@ -73,6 +73,10 @@ npx react-native run-ios
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## Credits
+
+- **UI/UX Design**: Gowtham Oleti
+
 ## Support
 
 - **Email**: textcraft.app@gmail.com
