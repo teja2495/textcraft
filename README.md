@@ -17,17 +17,17 @@ TextCraft simplifies the way you read and write by utilizing AI technology. The 
   - Expand or shorten text
   - Auto-rewrite shared text
 
-## Download
-
-<a href="https://play.google.com/store/apps/details?id=com.tk.textcraft">
-  <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="200">
-</a>
-
 ## Screenshots
 
 | Home Screen | Rewrite Options | Summary Result |
 |-------------|----------------|-----------------|
 | ![Home Screen](screenshots/homescreen.png) | ![Rewrite Options](screenshots/rewrite-options.png) | ![Summary Result](screenshots/result-screen.png) |
+
+## Download
+
+<a href="https://play.google.com/store/apps/details?id=com.tk.textcraft">
+  <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="200">
+</a>
 
 ## Privacy & Security
 
