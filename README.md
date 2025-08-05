@@ -19,7 +19,7 @@ TextCraft simplifies the way you read and write by utilizing AI technology. The 
 
 ## Download
 
-📱 **[Download on Google Play](https://play.google.com/store/apps/details?id=com.tk.textcraft)**
+[![Get it on Google Play](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.tk.textcraft)
 
 ## Privacy & Security
 
@@ -66,10 +66,6 @@ npx react-native run-android
 # For iOS
 npx react-native run-ios
 ```
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
